@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html lang = "en"> 
+    <head> 
+    <title>EVOLUTION</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="styles_signup.css" rel="stylesheet"> 
+    <link href="styles_index.css" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="favicon-e.ico"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="validator.js"></script>
+    </head>
+    
+    <body>
+        <nav>
+            <img class="secondlogo" src="e.png" alt=" ">
+            <a href="index.html">Home</a>&nbsp;|&nbsp;
+            <a href="plans.html">Plans</a>&nbsp;|&nbsp;
+            <a href="signup.html">Sign Up</a>&nbsp;|&nbsp;
+            <img class="logo" src="e.png" alt=" "> 
+        </nav>
+
+    <h1>Registration</h1>
+        
+    <form name="Form" action="/submit.php" onsubmit="return scriptForm()" method="post">
+    <p>Name:&nbsp;<input type="text" size="50" name="Name"></p><br>
+    <p>Cellphone:&nbsp;<input type="text" size="50" name="Cellphone"></p><br>
+    <p>E-mail Address:&nbsp;<input type="text" size="50" name="Email"></p><br>
+    
+    <p>Gender: 
+    <input type="radio" name="Gender" value="Male">Male
+    <input type="radio" name="Gender" value="Female">Female
+    <input type="radio" name="Gender" value="Other">Other</p><br> 
+    </p>
+
+    <p>Select your plan:
+        <select type="text" value=" " name="Subject">
+            <option>Bronze</option> 
+            <option>Silver</option> 
+            <option>Gold</option>
+        </select>
+    </p><br><br>
+
+    <p><input type="submit" value="Send" name="Submit">
+    <input type="reset" value="Reset" name="Reset"> 
+    </p>
+    </form>
+
+
+
+
+
+
+
+
+        <p class="lastparagraph">
+            Hours:<br>
+            Monday - Friday: 7AM - 12PM<br>
+            Saturday - Sunday: 9AM - 5PM<br><br>
+            Interested in being part of the Evolution family? 
+            Call us at &nbsp;<a href= "tel:212-123-4567">212-123-4567</a>&nbsp;&nbsp;&nbsp;<br> 
+            Send us your resume at &nbsp;<a href= "mailto:jobs@evolution.com">jobs@evolution.com</a><br>
+            Address:&nbsp;<a href="https://g.page/evolutionpilates?share" target="blank">2 Shore Rd, Port Washington, NY 11050</a>
+        </p>
+    
+        <footer>
+            <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="http://www.twitter.com" class="fa fa-twitter"></a> 
+            <a href="http://www.snapchat.com" class="fa fa-snapchat-ghost"></a> 
+            <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+            <a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
+        </footer>
+        
+    </body>
+</html>
