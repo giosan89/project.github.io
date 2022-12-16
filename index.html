@@ -1,2 +1,121 @@
-# project.github.io
-Project website
+<!DOCTYPE html> 
+<html lang = "en"> 
+    <head> 
+    <title>EVOLUTION</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="styles_index.css" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="favicon-e.ico"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head> 
+
+    <body>
+        <nav>
+            <img class="secondlogo" src="e.png" alt=" ">
+            <a href="index.html">Home</a>&nbsp;|&nbsp;
+            <a href="plans.html">Plans</a>&nbsp;|&nbsp;
+            <a href="signup.html">Sign Up</a>&nbsp;|&nbsp;
+            <img class="logo" src="e.png" alt=" "> 
+        </nav>
+
+        <h1>Become The Best Version Of Yourself</h1>
+
+        <!-- Container -->
+        <div class="slideshow-container">
+
+            <!-- Images and caption text -->
+            <div class="mySlides fade">
+            <img src="woman.jpg" alt="woman" style="width:100%">
+            <div class="text">ARE</div>
+            </div>
+  
+        <div class="mySlides fade">
+            <img src="manrope.webp" alt="manrope" style="width:100%">
+            <div class="text">YOUU</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <img src="gym.png" alt="slides" style="width:100%">
+            <div class="text">READYYY??!!</div>
+        </div>
+  
+        <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles bottom -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script> 
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+        // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+        // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+    <h2>About Us</h2>
+
+    <p class="firstparagraph">
+        At Evolution we are not only a gym, we are a family.<br> 
+        Evolution is a social gym that allows you to be matched to people like yourself. Create a profile and network.<br> 
+        You don't have to at it by yourself. Set up classes with others and reach your goals together.<br> 
+        If you'd like to have a solo session, you can also set up training one-on-one with our professionals.<br>
+        This is a judgement free establishment, the video below shows one of our beautiful gyms.
+    </p>
+
+    <p class="iframe"><iframe src="https://www.youtube-nocookie.com/embed/IuT8s5jWLaQ" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe></p>
+    
+    <p class="lastparagraph">
+        Hours:<br>
+        Monday - Friday: 7AM - 12PM<br>
+        Saturday - Sunday: 9AM - 5PM<br><br>
+        Interested in being part of the Evolution family? 
+        Call us at &nbsp;<a href= "tel:212-123-4567">212-123-4567</a>&nbsp;&nbsp;&nbsp;<br> 
+        Send us your resume at &nbsp;<a href= "mailto:jobs@evolution.com">jobs@evolution.com</a><br>
+        Address:&nbsp;<a href="https://g.page/evolutionpilates?share" target="blank">2 Shore Rd, Port Washington, NY 11050</a>
+    </p>
+
+    <footer>
+        <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="http://www.twitter.com" class="fa fa-twitter"></a> 
+        <a href="http://www.snapchat.com" class="fa fa-snapchat-ghost"></a> 
+        <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+        <a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
+    </footer>
+    
+            
+    </body>
+</html>
